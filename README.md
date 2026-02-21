@@ -1,8 +1,1 @@
-# JavaScript
-# Node
-# React
-
-```bazaar
-node -v
-npm -v
-```
+# Node.js: Getting Started
