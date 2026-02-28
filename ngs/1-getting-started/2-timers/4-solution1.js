@@ -1,4 +1,4 @@
-const theOneFunc = delay => {
+const theOneFunc = (delay) => {
   console.log('Hello after ' + delay + ' seconds');
 };
 

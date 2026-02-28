@@ -14,10 +14,19 @@ function fetch (url) {
 fetch('https://www.javascript.com/')
   .then(data => {
     console.log(data.length);
-  });
+  }).catch(err => { console.error(err)});
 
-  (async function read() {
-    const data = await fetch('https://www.javascript.com/');
+  // (async function read() {
+  //   const data = await fetch('https://www.javascript.com/');
 
-    console.log(data.length);
+  //   console.log(data.length);
+  // })();
+
+  (async () => {
+    try {
+      const data = await fetch('https://www.javascript.com/');
+      console.log(data.length);
+    } catch (err) {
+      console.error(err);
+    }
   })();
