@@ -1,3 +1,4 @@
 // Top-level API is an array
-
-module.exports = [2, 3, 5, 7];
+exports = [1, 3, 5, 7];
+module.exports.a2 = [2, 3, 5, 7];
+module.exports = {a2: [5,6,6,7]};
