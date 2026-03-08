@@ -1,7 +1,7 @@
-const fs = require('fs');
+const fs = require('fs')
 
-const data = fs.readFileSync(__filename);
+const data = fs.readFileSync(__filename)
 
-console.log('File data is', data);
+console.log('File data is', data)
 
-console.log('TEST');
+console.log('TEST')

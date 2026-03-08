@@ -1,10 +1,10 @@
-const fs = require('fs');
+const fs = require('fs')
 
 fs.readFile(__filename, function cb1(err, data) {
-  fs.writeFile(__filename + '.copy', data, function cb2(err) {
-    // Nest more callbacks here...
-    console.log("done")
-  });
-});
+    fs.writeFile(__filename + '.copy', data, function cb2(err) {
+        // Nest more callbacks here...
+        console.log("done")
+    })
+})
 
-console.log('TEST');
+console.log('TEST')

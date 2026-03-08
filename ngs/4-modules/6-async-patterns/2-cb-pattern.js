@@ -44,21 +44,21 @@
 // }
 // console.log("TEST");
 
-import fs from "fs/promises";
-import { fileURLToPath } from "url";
-const __filename = fileURLToPath(import.meta.url);
+import fs from "fs/promises"
+import { fileURLToPath } from "url"
+const __filename = fileURLToPath(import.meta.url)
 async function main() {
     try {
-        const data = await fs.readFile(__filename);
-        console.log("File data is", data);
+        const data = await fs.readFile(__filename)
+        console.log("File data is", data)
     } catch (err) {
-        console.error(err);
+        console.error(err)
     }
-    console.log("TEST");
+    console.log("TEST")
 }
 main()
 await main()
-console.log("DONE");
+console.log("DONE")
 
 
 
@@ -77,3 +77,6 @@ console.log("DONE");
 // }
 // main();
 // console.log("TEST 1");
+
+
+
