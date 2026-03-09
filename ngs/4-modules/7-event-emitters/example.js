@@ -24,5 +24,3 @@ event.on("TEST_EVENT", () => {
     console.log("test event received 4")
 })
 
-// event.emit("TEST_EVENT");
-

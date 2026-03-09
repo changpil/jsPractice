@@ -1,17 +1,21 @@
-const express = require('express');
+const express = require('express')
 
-const server = express();
+const server = express()
 
-server.set('view engine', 'ejs');
+server.set('view engine', 'ejs')
 
 server.get('/', (req, res) => {
-  res.render('index');
-});
+    res.render('index')
+})
+
+server.get('/api', (req, res) => {
+    res.send('api')
+})
 
 server.get('/about', (req, res) => {
-  res.render('about');
-});
+    res.render('about')
+})
 
 server.listen(4242, () => {
-  console.log('Express Server is running...');
-});
+    console.log('Express Server is running...')
+})

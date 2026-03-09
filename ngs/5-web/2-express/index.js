@@ -9,20 +9,17 @@
 
 
 // built-in module http
-
 import http from 'http'
 const requestListener = (req, res) => {
+    console.log(req.url)
+    console.dir(req, { depth: 0 })
     res.end("Hello world\n")
 }
-let server
-async function main() {
-    // Passing a function : requestListener
-    // Calling a function: requestListener()
-    server = await http.createServer(requestListener)
-}
-// const server = http.createServer(requestListener)
-// await main()
-main()
+
+// STEP 1
+const server = http.createServer()
+server.on("request", requestListener)
+
 server.listen(4242, () => {
     console.log('Express Server is running...')
 })
