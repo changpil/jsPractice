@@ -1,0 +1,32 @@
+{
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "typescript": "npx tsx",
+  },
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "cds",
+    "csn",
+    "csv",
+    "csv (semicolon)",
+    "tsv",
+    "tab"
+  ],
+  "javascript.format.semicolons": "remove",
+  "typescript.format.semicolons": "remove",
+  "typescript.preferences.quoteStyle": "double",
+  "javascript.preferences.quoteStyle": "double",
+  "editor.formatOnSave": true,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "prettier.semi": false,
+  "code-runner.runInTerminal": true,
+  "cds.typeGenerator.enabled": true,
+}
